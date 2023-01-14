@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap'); 
+
+:root{
+
+    --color-primary:#CE9E51;
+    --color-primary-dark:#9C7B49;
+    --dark-grey:#232323;
+    --light-grey:#cfcfcf;
+    --md-grey:#666666;
+    --dark-grey-2:#3b3b3b;
+    --black-blue:#192e4d;
+}
+
+*, 
+*::before, 
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* header  */
+
+.header-section{
+    padding: 5rem 18rem;
+    background-color: rgba(207, 178, 131, 0.349);
+}
+
+
+/* navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-name{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--black-blue);
+    
+}
+
+.navbar-items{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    
+}
+
+.nav-item{
+    padding: 1rem 1.5rem;
+    font-size: 1.8rem;
+    border-bottom: 1px solid transparent;
+    
+}
+
+.nav-item:hover{
+    border-bottom: 1px solid var(--color-primary-dark);
+}
+
+.nav-item a {
+    text-decoration: none;
+    color:var(--black-blue);
+}
+
+
+/* bannner */
+
+.banner{
+    margin: 10rem auto 4rem auto;
+}
+
+.banner-text-area{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.banner-heading{
+    font-size: 3.6rem;
+    text-align: center;
+    line-height: 1.3;
+    letter-spacing: 2px;
+    color:var(--black-blue)
+}
+
+.banner-text{
+    font-size: 1.4rem;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    text-align: center;
+    color:var(--dark-grey-2);
+    margin-top: 2.5rem;
+    
+}
+
+.banner-button{
+    border: none;
+    padding: 1.6rem 1.8rem;
+    display: block;
+    margin: 3rem auto;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    color: #fff;
+    cursor: pointer;
+    background:linear-gradient(to bottom, var(--color-primary), var(--color-primary-dark));
+    transition: transform .3s;
+}
+
+.banner-button:hover{
+    background:linear-gradient(to bottom, #b98c43, #836331);
+}
+
+.banner-button:active{
+    transform: translateY(2px);
+}
+
+.banner-image{
+    object-fit: cover;
+}
+
+.banner-image img{
+    width:100%;
+}
