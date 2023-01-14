@@ -3,10 +3,10 @@
 :root{
 
     --color-primary:#CE9E51;
-    --color-primary-dark:#9C7B49;
+    --color-primary-dark:#a1804e;
     --dark-grey:#232323;
     --light-grey:#cfcfcf;
-    --md-grey:#666666;
+    --md-grey:#6e6e6e;
     --dark-grey-2:#3b3b3b;
     --black-blue:#192e4d;
 }
@@ -59,6 +59,7 @@ body{
 .nav-item{
     padding: 1rem 1.5rem;
     font-size: 1.8rem;
+    color: var(--black-blue);
     border-bottom: 1px solid transparent;
     
 }
@@ -102,6 +103,11 @@ body{
     
 }
 
+.banner-text span {
+    font-weight: 600;
+    color:var(--black-blue);
+}
+
 .banner-button{
     border: none;
     padding: 1.6rem 1.8rem;
@@ -117,7 +123,7 @@ body{
 }
 
 .banner-button:hover{
-    background:linear-gradient(to bottom, #b98c43, #836331);
+    background:linear-gradient(to bottom, #b98c43, #916e38);
 }
 
 .banner-button:active{
@@ -129,5 +135,81 @@ body{
 }
 
 .banner-image img{
+   
     width:100%;
+}
+
+/* main contents  */
+
+.contents{
+    background-color: #fff;
+    margin:0 10rem;
+}
+
+/* features section */
+
+.features{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 5rem;
+    padding: 2rem 8rem;
+}
+
+.features-text-area{
+    width:70%;
+    margin-left: 4rem;
+}
+.features-heading{
+    font-size:3.6rem;
+    line-height: 1.3;
+    font-weight: 550;
+    color:var(--md-grey);
+    margin-bottom: 2rem;
+}
+
+.span-text-1{color:var(--black-blue);}
+.span-text-2{color:var(--color-primary-dark);}
+
+.features-text{
+    color:var(--dark-grey-2);
+    font-size: 1.3rem;
+    line-height: 1.8;
+}
+
+
+
+.features-button{
+
+    border: none;
+    padding: 1.6rem 1.8rem;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    color: #fff;
+    cursor: pointer;
+    background:linear-gradient(to bottom, var(--color-primary), var(--color-primary-dark));
+    transition: transform .3s;
+    margin-top: 2rem;
+   
+}
+
+
+.features-button:hover{
+    background:linear-gradient(to bottom, #b98c43, #916e38);
+}
+
+.features-button:active{
+    transform: translateY(2px);
+}
+
+.features-gallery{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 1.5rem;
+}
+
+.features-img{
+    width:280px;
 }
